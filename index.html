@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+   <section id="menu" class="menu">
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">ESTUDIOS</a></li>
+                    <!-- <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> -->
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+</section>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+             <!-- <div class="contenedor-img">  -->
+                <img src="img/fotoPerfil.jpeg" alt="">
+             <!-- </div>  -->
+            <h1>LIHUÉN SEGOVIA GRABOIS</h1>
+            <h2>Estudiante de Ingeniería en Sistemas de la Información</h2>
+            <div class="redes">
+                <a href=https://www.linkedin.com/in/lihuen-segovia-grabois-b02642217 target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Lihuén Segovia Grabois.</span> Como estudiante de Ingeniería en Sistemas de la Información, siento un gran entusiasmo por aprender y expandir mis conocimientos. 
+                Me gustaría aprovechar la oportunidad para aportar mis habilidades de comunicación y organización al ambiente laboral.
+                Me caracterizo por ser proactivo y autodidacta. Poseo un fuerte compromiso y responsabilidad con mis actividades, y me muestro siempre dispuesto a aprender y a colaborar con mis compañeros.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            16-02-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3447 504626
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lihuensg@gmail.com
+                        </li>
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Argentina
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Artusi 915, Concepción del Uruguay, Entre Ríos
+                        </li>
+                        <!-- <li>
+                            <strong>Cargo</strong>
+                            <span> </span>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                 <div class="col">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>
+                            <strong>Español</strong>
+                            Nativo
+                        </li>
+                        <li>
+                            <strong>Ingles</strong>
+                            Básico
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>  -->
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Postgre SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Aprendidas en la universidad</h3>
+                    <div class="skill">
+                        <span>Pascal</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Smalltack (Orientacíon Objeto)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lisp (Funcional)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Prolog (Lógica)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>My SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C# y fremework.NET</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Formación</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria en Sistemas de la Información</h4>
+                        <span class="casa">UTN- FRCU, Concepción del Uruguay</span>
+                        <span class="fecha">2019- ACTUALIDAD</span>
+                        <p>Estudiante avanzado de ingeniería en Sistemas de la Información
+                            (cursando 4to año)
+                            </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller en Ciencias Sociales y Humanidades</h4>
+                        <span class="casa">Escuela Secundaria N°3 Presbitero Eliseo Melchiori, Arroyo BarúDpto. Colón
+                        </span>
+                        <span class="fecha">2012 - 2018</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="marca-agua">
+            <h4>Hecho por Lihuén Segovia Grabois</h4>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
