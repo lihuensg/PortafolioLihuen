@@ -72,7 +72,6 @@ html{
     display: flex;
     align-items: center;
     
-    
 }
 .inicio .contenido-banner{
     padding-top: 30px;
@@ -161,7 +160,7 @@ html{
     margin: 12px 0;
 }
 .sobremi .fila .col ul li strong{
-    display: inline-block;
+    /* display: inline-block; */
     color: #1CB698;
     width: 130px;
 }
