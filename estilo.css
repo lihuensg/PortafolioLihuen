@@ -197,11 +197,13 @@ html{
     width: 50%;
     padding: 0 20px;
 }
-.skills .fila .col h3{
+/* .skills .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
-}
+} */
+
+
 .skills .fila .col .item {
     padding: 25px;
     margin-bottom: 30px;
@@ -215,6 +217,23 @@ html{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+}
+
+.skills .skill h4 {
+    font-size: 22px;
+    font-family: 'Righteous';
+    margin-bottom: 10px;
+}
+
+.skills .skill p {
+    font-size: 15px;
+    font-family: 'Work Sans';
+    margin-bottom: 20px;
+}
+
+.skills .skill .program {
+    font-size: 12px;
+    font-family: 'Caveat';
 }
 .skills .skill .barra-skill{
     height: 8px;
@@ -250,11 +269,7 @@ html{
 }
 .skills .skill  a:hover,
 .skills .skill  a:active {
-  font-size: 30px; 
-   
-}
-.inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+  font-size: 30px;    
 }
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
