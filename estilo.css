@@ -160,7 +160,7 @@ html{
     margin: 12px 0;
 }
 .sobremi .fila .col ul li strong{
-    /* display: inline-block; */
+    /* display: inline-block;  */
     color: #1CB698;
     width: 130px;
 }
@@ -202,6 +202,15 @@ html{
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
+.skills .fila .col .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #131517;
+    position: relative;
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+
 .skills .skill > span{
     font-weight: bold;
     display: block;
@@ -210,7 +219,7 @@ html{
 .skills .skill .barra-skill{
     height: 8px;
     width: 80%;
-    background-color: #131517;
+    background-color: #252A2E;
     position: relative;
     margin-bottom: 30px;
 }
@@ -233,6 +242,21 @@ html{
     right: -15px;
     font-size: 14px;
 }
+.skills .skill  a {
+    position: relative;
+    left: 8px;
+    color:  #1CB698;
+    transition: all 0.2s ease-in-out; 
+}
+.skills .skill  a:hover,
+.skills .skill  a:active {
+  font-size: 30px; 
+   
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698;
+}
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .htmlcss{
     width: 0%;
@@ -421,9 +445,11 @@ html{
     position: relative;
     bottom: 4px;
 }
+ /* F O O T E R */
+
 footer{
     background-color: #252A2E;
-    color: #fff;
+    color: #170101;
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
@@ -431,7 +457,7 @@ footer{
 }
 
 footer .marca-agua h4{ 
-    color: #fff;
+    color: #13624f;
     font-family: 'mynerve';
 
 }
@@ -450,6 +476,33 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+ button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+button:hover .overlay{
+    width: 100%; } 
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -502,20 +555,4 @@ footer .arriba{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-    }
 }
