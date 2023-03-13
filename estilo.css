@@ -273,7 +273,7 @@ html{
 }
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .htmlcss{
+/* .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
 }
@@ -352,7 +352,7 @@ html{
 @keyframes cshar {
     0%{width: 0%;}
     100%{width: 30%;}
-}
+} */
 
 /* SECCION CURRICULUM */
 .curriculum{
