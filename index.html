@@ -124,49 +124,86 @@
             <h2>Proyectos</h2>
             <div class="fila">
                 <div class="col">
-                    <!-- <h3>Proyectos</h3> -->
+                   
+                    <div class="item ">
+                        <div class="skill">
+                            <h4><a href="https://lihuensg.github.io/calculadora/" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                            </h4>
+                            <p>Este es un proyecto básico, donde se realizó una calculadora.</p>
+                            <div class="program">HTML, CSS, JavaScript</div>
+                        </div>
+                    </div> 
+
+
+                    <div class="item ">
+                        <div class="skill">
+                            <h4>Calculadora <a href="https://lihuensg.github.io/calculadora/" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                            </h4>
+                            <p>Este es un proyecto básico, donde se realizó una calculadora.</p>
+                            <div class="program">HTML, CSS, JavaScript</div>
+                        </div>
+                    </div> 
+
+                    <div class="item ">
+                        <div class="skill">
+                            <h4>Aplicación del clima <a href="https://lihuensg.github.io/Aplicacion-del-clima/" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                            </h4>
+                            <p>En este proyecto se utilizaron dos API, una se utiliza para obtener el nombre de la ciudad y sus características climáticas. 
+                                Y la otra API la utilizamos para obtener el mapa y marcar la ubicación de la respectiva ciudad.</p>
+                            <div class="program">HTML, CSS, JavaScript</div>
+                        </div>
+                    </div>    
+
+                    <div class="item ">
+                        <div class="skill">
+                            <h4>Formulario App <a href="https://lihuensg.github.io/formulario-app/" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                            </h4>
+                            <p>Este es un formulario, creado para enviar los datos a la API de Firebase. </p>
+                            <div class="program">HTML, CSS, JavaScript</div>
+                        </div>
+                    </div>     
+
+                    <div class="item ">
+                        <div class="skill">
+                            <h4>Búsqueda de películas <a href="https://lihuensg.github.io/buscador-peliculas/" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                            </h4>
+                            <p>En este proyecto, se realizó una consulta a una API, donde se ingresa el nombre de la película y las devuelve ordenas, de la fecha más antigua a la más reciente. </p>
+                            <div class="program">HTML, CSS, JavaScript</div>
+                        </div>
+                    </div>
+
                     <div class="item ">
                         <div class="skill">
                             <h4>Biblioteca <a href="https://github.com/lihuensg/Inicio-Bliblioteca" target="_blank"> <i class="fa-brands fa-github"></i></a>
                             </h4>
-                            <p>Este proyecto tiene como objetivo que un usuario administrativo pueda manejar una biblioteca. </p>
+                            <p>Este proyecto tiene como objetivo que un usuario administrativo pueda manejar una biblioteca. <br/> 
+                                Lo realizamos en grupo, en la materia "taller de programación".</p>
                             <div class="program"> C#  .NET Framework</div>
                         </div>
                     </div>
+
                     <div class="item ">
                         <div class="skill">
-                            <h4>Sintaxis <a href="https://github.com/lihuensg/Sintaxis" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                            <h4>Mi propio lenguaje <a href="https://github.com/lihuensg/Sintaxis" target="_blank"> <i class="fa-brands fa-github"></i></a>
                             </h4>
-                            <p>En este proyecto se realizó un lenguaje de programación aplicando la sintaxis deseada. </p>
+                            <p>En este proyecto se realizó un "lenguaje de programación" aplicando la sintaxis deseada por el desarrollador. </p>
                             <div class="program"> Pascal</div>
                         </div>
                     </div>
                 </div>
+            
                 <div class="col">
+                    
                     <div class="item ">
                         <div class="skill">
-                            <h4>Mi Portafolio<a href="https://github.com/lihuensg/PortafolioLihuen" target="_blank"><i class="fa-brands fa-github"></i> </i></a>
+                            <h4>Curso JS<a href="https://github.com/lihuensg/ahorcado" target="_blank"> <i class="fa-brands fa-github"></i></a>
                             </h4>
-                            <p>Este proyecto tiene como objetivo brindar mi información y conocimiento</p>
-                            <div class="program"> HTML CSS  JavaScript</div>
-                        </div>
-                    </div>
-                    <div class="item ">
-                        <div class="skill">
-                            <h4>Ahorcado <a href="https://github.com/lihuensg/ahorcado" target="_blank"> <i class="fa-brands fa-github"></i></a>
-                            </h4>
-                            <p>En este proyecto se realizó un curso de JavaScript donde al final se llega armar el juego del ahorcado</p>
+                            <p>En este proyecto se realizó un curso de JavaScript, donde al final se llega armar el juego del ahorcado.</p>
                             <div class="program"> JavaScript TypeScript HTML CSS </div>
                         </div>
                     </div>
-                    <div class="item ">
-                        <div class="skill">
-                            <h4>App-Marcos <a href="https://github.com/lihuensg/App-marcos" target="_blank"> <i class="fa-brands fa-github"></i></a>
-                            </h4>
-                            <p>Este proyecto tiene como objetivo que el usuario pueda realizar un pedido de bebidas</p>
-                            <div class="program"> HTML CSS  JavaScript</div>
-                        </div>
-                    </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -234,22 +271,6 @@
         </button> -->
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
-    <script>
-        // Función que se ejecuta al hacer clic en el botón
-        document.getElementById('descargar-pdf').addEventListener('click', function () {
-            // Crea un objeto jsPDF
-            var doc = new jsPDF();
-
-            // Obtiene el contenido HTML de la página actual
-            var html = document.documentElement.outerHTML;
-
-            // Convierte el contenido HTML en un documento PDF
-            doc.fromHTML(html, 15, 15, { 'width': 170 });
-
-            // Descarga el archivo PDF
-            doc.save("mi-pagina.pdf");
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 

@@ -40,5 +40,20 @@ window.onscroll = function(){
 } 
 
 
+ // Función que se ejecuta al hacer clic en el botón
+ document.getElementById('descargar-pdf').addEventListener('click', function () {
+    // Crea un objeto jsPDF
+    var doc = new jsPDF();
+
+    // Obtiene el contenido HTML de la página actual
+    var html = document.documentElement.outerHTML;
+
+    // Convierte el contenido HTML en un documento PDF
+    doc.fromHTML(html, 15, 15, { 'width': 170 });
+
+    // Descarga el archivo PDF
+    doc.save("mi-pagina.pdf");
+});
+
   
 
