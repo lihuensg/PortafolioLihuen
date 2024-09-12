@@ -336,6 +336,12 @@ html{
     color: #1CB698;
     margin-bottom: 10px;
 }
+
+.curriculum .fila .item .skill{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
 .curriculum .fila .item p{
     line-height: 24px;
 }
